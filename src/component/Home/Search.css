@@ -1,51 +1,84 @@
-.search{
-    height:450px;
-    width:100%;
-    background-image:url('https://i.ibb.co/NVQxPB6/food-Wallpaper.png');
-    background-repeat:no-repeat;
-    background-size: 100% 450px;
+/*Search Css Starts*/
+a{
+    text-decoration: none !important;
 }
 
+.background-img{
+    height: 400px;
+    background-image: url('https://i.ibb.co/1QYyjdd/food-wallpaper.png');
+    
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    
+}
 #logo{
-    height:150px;
-    width:150px;
-    background-color: white;
-    border-radius:50%;
-    margin-left: 46%;
-    margin-top: 1%;
-    position:absolute;
-
+    height: 100px;
+    width: 100px;
+    background-color: #8b3437;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 6%; 
+    animation: coll 10s infinite;  
+}
+@keyframes coll{
+    0% {margin-left: 50%; height:100px; width:100px}
+    25% {margin-left:40%; height:0px; width:0px}
+    50% {margin-left: 50%; height:100px; width:100px}
+    75%{margin-left: 60%; height:0px; width:0px}
+    100% {margin-left: 50%; height:100px; width:100px}
+    
+}
+#logo >  span{
+    margin-top: 26%;
+    position: absolute;
+    font-size: 38px;
+    color: orange;
+    margin-left: 20px; 
+    animation: collapse 10s infinite;
+}
+@keyframes collapse{
+    0% {margin-left: 35%; font-size: 38px; }
+    25%{margin-left:25%;font-size: 0px; }
+    50%{margin-left: 35%; font-size: 38px; }
+    75%{margin-left: 45%; font-size: 0px; }
+    100%{margin-left: 35%; font-size: 38px; }
 }
 
-#logo > span{
-    position:absolute;
-    margin-left: 30%;
-    margin-top: 10%;
-    font-size:80px;
-    color:rgb(96, 65, 143);
-}
 
-#heading{
-    color:white;
-    font-size:45px;
-    margin-top:14%;
-    margin-left: 30%;
-    position:absolute;
+.heading{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 32%;
+}
+.city{
+    height: 40px;
+    width: 30%;
+    margin-left:10%;
+    float: left;
+    margin-top: 34%
 }
 
 .dropdown{
+    width: 60%;
+    position: absolute;
+    margin-left: 22%;
+}
+.row{
+    display: inline-block;
+}
+.restauSelect{
     width:50%;
-    height:60px;
-    margin-top:22%;
-    margin-left:31%;
-    position:absolute;
+    height: 40px;
+    margin-top: 34%
 }
 
-select{
-    height:60px;
-    width:40%
-}
+.location{
+    margin-left: 18%;
+    width: 30%;
 
-.restaurantSelect{
-    width:50%
 }

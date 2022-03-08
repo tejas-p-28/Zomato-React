@@ -1,66 +1,81 @@
-.quickSearch{
-    height:500px;
-    width:80%;
-    margin-left: 10%;
-    margin-top:2%;
+#quicksearch{
+    height:800px;
+    width: 100%;  
 }
-
-#QuickSearchHeading{
-    color:#d9713f;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#quickHeading{
+    font-size: 40px; 
+    margin-left: 8%;
+    color: #dd5858;
     display: block;
-    font-weight: bold;
-    margin-left:1%;
 }
 
-#QuickSubHeading{
-    color:gray;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 2;
-    position:absolute;
-    margin-left:1%;
+#quickHeading:hover{
+    color: blueviolet;
+    width: max-content;
+}
+#quickHeading > span{
+    margin-right: 43%;
+    text-align: none;
+    
+}
+#quickSubHeading{
+    font-size: 30px;
+    margin-left: 8%;
+    color:grey;
+}
+.mainTile{
+    margin-left: 10%;
+
+}
+.card{
+    display: inline-block;
+    margin-left: 3%;
+    box-shadow:10px 20px 10px grey ;
+    margin-top: 3%;
+    
+    background-color: #f1d9d9;
+    
 }
 
-.tileContainer{
-    height:180px;
-    width:32%;
-    margin-left:1%;
-    margin-top:5%;
-    display:inline-block;
-    box-shadow: 10px 20px 10px gray;
+.card:hover{
+    transform: scale(1.1);
 }
-
-.tileComponent1{
-    width:45%;
-    float: left;
+.card-body{
+    background-color: #e5d1d1;
 }
-
-.tileComponent2{
-    width:52%;
-    height:180px;
-    float: left;
-    margin-top:15%;
-    margin-left:2%;
+.card > img{
+    width: 100%;
 }
-
-.tileComponent1 > img{
-    width:100%;
-    height:180px;
-}
-
-.componentHeading{
-    color:#d9713f;
-    font-size: 25px;
-}
-
-.componentHeading>a{
+.card-body > a{
     text-decoration: none;
-    color:#d9713f;
+    font-size:30px;
+    text-align: center;
+    color:#8b3437;
+    margin-left: 25%;
+}
+.card-text{
+    font-size: 20px;
+}
+.tileComponent1{
+    width: 100%;
+    height: 180px;
 }
 
-.componentSubHeading{
-    color:#e77e4d;
-    font-size: 18px;
+.tileHeading{
+    font-size:30px;
+    text-align: center;
+    margin-top: -1%;
+}
+.tileHeading > a{
+    text-decoration: none;
+    color: brown;
+}
+.tileSubHeading{
+    font-size: 20px;
+    text-align: center;
+}
+.burger{
+    height:160px;
+    width: 240px;
+
 }

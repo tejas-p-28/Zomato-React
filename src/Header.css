@@ -19,11 +19,13 @@ body{
     margin-top: 1%;
 }
 
+.btn-primary{
+    float: left;
+}
+
 #social{
     float: left;
     margin-left: 68%;
     margin-top: 10px;
 }
-.socialImg{
-    height:50px
-}
+
