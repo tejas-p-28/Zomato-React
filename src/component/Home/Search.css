@@ -68,9 +68,7 @@ a{
     position: absolute;
     margin-left: 22%;
 }
-.row{
-    display: inline-block;
-}
+
 .restauSelect{
     width:50%;
     height: 40px;
