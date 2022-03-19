@@ -7,7 +7,7 @@ class Header extends Component{
         return(
             <div className="header">
                 <div id="brand">
-                    <Link to="/">Zomato</Link>
+                    <Link to="/" style={{color:'#fff'}}>Zomato</Link>
                 </div>
                 <div id="social">
                     <Link className="btn btn-primary" to="/register"><span className="glyphicon glyphicon-user"></span> Sign Up</Link>
