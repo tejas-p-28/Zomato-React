@@ -37,7 +37,7 @@ class Details extends Component {
                 <div className="main">
                     <div className="tileImage">
                         <div className="imageClass">
-                            <img src={details.restaurant_thumb} alt=""/>    
+                            <img src={details.restaurant_thumb} alt={details.restaurant_name}/>    
                         </div>    
                     </div> 
                     <div className="tileContent">

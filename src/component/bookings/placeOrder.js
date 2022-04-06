@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import './placeOrder.css';
 
 const url="https://zomatotejas.herokuapp.com/menuItem";
-const postData="https://zomatotejas.herokuapp.com/orders"
+const postData="https://zomatotejas.herokuapp.com/placeorder"
 
 class placeOrder extends Component {
     constructor(props){
