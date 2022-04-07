@@ -6,17 +6,16 @@ const url = "https://zomatotejas.herokuapp.com/filter";
 class SortFilter extends Component {
 
     filterSort = (event) => {
+        let cuisineId = this.props.cuisineId;
         let mealId = this.props.mealId
-        let cost = (event.target.value).split('-');
-        let lcost = cost[0];
-        let hcost = cost[1];
-        let costUrl = ""
+        let sort = "";
+        let sortUrl = ""
         if(event.target.value === ""){
-            costUrl = `${url}/${mealId}?lcost=${lcost}&hcost=${hcost}`
+            sortUrl = `${url}/${mealId}`
         }else{
-            costUrl = `${url}/${mealId}?hcost=${hcost}&lcost=${lcost}`
+            sortUrl = `${url}/${mealId}?cuisineId=${cuisineId}&sort=${sort}`
         }
-        axios.get(costUrl)
+        axios.get(sortUrl)
         .then((res) => {this.props.restPerSort(res.data)})
     }
     render(){
@@ -25,13 +24,13 @@ class SortFilter extends Component {
                 <center>Sort Filter</center>
                 <div style={{marginLeft:'15%'}} onChange={this.filterSort}>
                     <label className="radio">
-                        <input type="radio" value="" name="cuisine"/>All
+                        <input type="radio" value="" name="sort"/>All
                     </label>
                     <label className="radio">
-                        <input type="radio" value="100-300" name="cuisine"/>Low to High 
+                        <input type="radio" value="1" name="lowtohigh"/>Low to High 
                     </label>
                     <label className="radio">
-                        <input type="radio" value="301-500" name="cuisine"/>High to Low
+                        <input type="radio" value="-1" name="hightolow"/>High to Low
                     </label>
                 </div>
                 

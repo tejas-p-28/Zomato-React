@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './placeOrder.css';
+import Header from '../../Header'
 
 const url="https://zomatotejas.herokuapp.com/menuItem";
 const postData="https://zomatotejas.herokuapp.com/placeorder"
@@ -58,6 +59,7 @@ class placeOrder extends Component {
         console.log(this.state)
         return(
             <>
+                <Header/>
                 <div className="container">
                     <hr/>
                     <div className="panel panel-primary">

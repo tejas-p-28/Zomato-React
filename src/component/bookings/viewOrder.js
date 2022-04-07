@@ -2,6 +2,8 @@ import React,{Component} from 'react';
 import axios from 'axios';
 import OrderDisplay from './orderDisplay';
 
+import Header from '../../Header'
+
 const url = "https://zomatotejas.herokuapp.com/orders";
 
 class viewOrder extends Component {
@@ -15,6 +17,7 @@ class viewOrder extends Component {
     render(){
         return(
             <>
+                <Header/>
                 <OrderDisplay orderData={this.state.orders}/>
             </>
         )

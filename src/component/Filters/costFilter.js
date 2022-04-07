@@ -40,7 +40,7 @@ class CostFilter extends Component {
                         <input type="radio" value="701-900" name="cuisine"/>701-900
                     </label>
                     <label className="radio">
-                        <input type="radio" value="901-above" name="cuisine"/>901-above
+                        <input type="radio" value="901-3000" name="cuisine"/>901-3000
                     </label>
                 </div>
                 
