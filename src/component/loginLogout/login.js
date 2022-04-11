@@ -8,8 +8,8 @@ class login extends Component {
         super(props)
 
         this.state={
-            email:'',
-            password:'',
+            email:'@gmail.com',
+            password:'123',
             message:''
         }
     }
@@ -55,14 +55,14 @@ class login extends Component {
                                 <div className="form-group">
                                     <label form="form-control" for="email">Email</label>
                                     <input className="form-control" id="email" type="email"
-                                            name="email" onChange={this.handleChange} />
+                                    value={this.state.email} name="email" onChange={this.handleChange} />
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="form-group">
                                     <label form="form-control" for="password">Password</label>
                                     <input className="form-control" id="password" type="password"
-                                            name="password" onChange={this.handleChange}/>
+                                    value={this.state.password} name="password" onChange={this.handleChange}/>
                                 </div>
                             </div>
                         </div>
