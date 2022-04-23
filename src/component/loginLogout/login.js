@@ -9,7 +9,7 @@ class login extends Component {
 
         this.state={
             email:'@gmail.com',
-            password:'123',
+            password:'12345678',
             message:''
         }
     }
