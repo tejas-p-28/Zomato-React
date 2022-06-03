@@ -53,14 +53,7 @@ class Search extends Component {
         
     }
 
-    handleCity = (event) => {
-        let stateId = event.target.value;
-        fetch(`${rurl}${stateId}`,{method:'GET'})
-        .then((res) => res.json())
-        .then((data) => {
-            this.setState({restData:data})
-        })
-    }
+    
 
 
     render(){
