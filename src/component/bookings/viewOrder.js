@@ -5,6 +5,7 @@ import OrderDisplay from './orderDisplay';
 import Header from '../../Header'
 
 const url = "https://zomatotejas.herokuapp.com/orders";
+const url1 = "https://zomatotejas.herokuapp.com/updateOrder"
 
 class viewOrder extends Component {
     constructor(props){
@@ -43,7 +44,7 @@ class viewOrder extends Component {
                     "bank_name":queryp.split('&')[3].split('=')[1]
                 }
                 let id = queryp.split('&')[1].split('=')[1].split('_')[1];
-                fetch(`${url}/${id}`,{
+                fetch(`${url1}/${id}`,{
                     method:'PATCH',
                     headers:{
                         'Accept':'application/json',
