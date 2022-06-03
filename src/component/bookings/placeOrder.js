@@ -40,7 +40,7 @@ class placeOrder extends Component {
             body:JSON.stringify(obj)
         })
         // .then(this.props.history.push('/viewBooking'))
-        console.log('order taken')
+        .then(console.log('order taken'))
     }
 
     renderMenu = (data) => {
